@@ -1,0 +1,9 @@
+.label {
+    -fx-font: 16px "Serif";
+    -fx-padding: 5;
+}
+
+.root {
+    -fx-background: cornflowerblue;
+    -fx-fill: orchid;
+}

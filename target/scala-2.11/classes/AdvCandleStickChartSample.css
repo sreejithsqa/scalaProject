@@ -1,0 +1,51 @@
+.label {
+    -fx-font: 16px "Serif";
+    -fx-padding: 5;
+}
+
+.root {
+    -fx-font-size: 14pt;
+    -fx-background: #f5f8ff;
+    -fx-fill: orchid;
+}
+.pData {
+    -fx-fill: #b52115;
+    -fx-background: #ff6334;
+}
+
+.series0{
+    -fx-padding: 6px;
+    -fx-background-color: #dcddf0, #fc1bff;
+}
+
+.series1 {
+    -fx-padding: 12px;
+    -fx-shape: "M 50,30  m 0,25  a 1,1 0 0,0 0,-50  a 1,1 0 1,0 0,50";
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-border-width:5;
+    -fx-border-color: #ff191e;
+    -fx-background-color: #f0e68c, #ff2d41;
+}
+
+.series2 {
+    -fx-padding: 12px;
+    -fx-shape: "M 50,30  m 0,25  a 1,1 0 0,0 0,-50  a 1,1 0 1,0 0,50";
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-border-width:0;
+    -fx-border-color: #3858ff;
+    -fx-background-color: #f0e68c, #1b3cff;
+}
+
+.series3 {
+    -fx-padding: 12px;
+    -fx-shape: "M 50,30  m 0,25  a 1,1 0 0,0 0,-50  a 1,1 0 1,0 0,50";
+    -fx-background-radius: 2 2 0 0;
+    -fx-border-color: #feff35;
+    -fx-effect: null;
+    -fx-background-color: #f0e68c, #f9ff2f;
+}
+
+
+

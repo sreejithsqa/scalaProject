@@ -1,0 +1,23 @@
+I have started data analysing from Poi List and found that the coordinate provided in the Poi List are
+Calgary(Poi1 and Poi2),Montreal (Poi 3) and NovaScotia(Poi 4).Since the dataSample have duplicate data ,
+I used drop duplicate method in Latitude ,Longitude and Timeset to remove duplicate rows.
+The orginal length of Data Sample provided was 22025 and found out that after removing the duplicate data
+it is reduced to 19999. Then next step i tried to find out the minimum distance from the Data Sample Latitude
+and Longitude with Poi List Latitude and Longitude.After Calculating the Shortest Distance , i have used an List
+Buffer to store the distance.Then I have converted the List buffer to a Data Frame and added an index to join the
+Distance List to the data frame. By Using the group By method in scala i have tried to figure out the min distance
+and corresponding Poi Location that has minimum distance to the request Location.
+
+For finding the average of distance between the POI location to each of its assigned requests I have used the aggregate
+function to find out the average of min(Distance) and for finding the Standard Deviation I have used the Describe method
+in scala.And Also i have used the group by and aggregate method to find the Radius and Density.
+
+For Data Visualization I have used the scalafx Scatter chart.Since all the shapes in scala by default is displaying in
+pixel rate i came up with multi series in scatter chart with Series 1 corresponding to the geo location from Data sample
+from the final result , Series 2 - Poi List Geo Location 1 and 2 (both are same value) ,Series 3 - Poi List Geo Location
+3 and Series 4 - Poi List Geo Location 4. In order to customize the shape,size,color of data in each series of chart
+I have used the Css Stylesheet method in scala.By filtering out the word count Poi id(eg: POI1)from final result and also
+from the chart it is clear that the Poi Geo Location 3 has the most number of request received and and Geo
+location 1 & 2 having second largest request received and Geo Location 4 has the lesser number of request received. Since most
+of the other data row is string i couldn't able to dig deeper into it.
+
